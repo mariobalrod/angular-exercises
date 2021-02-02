@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'calculator';
+  title = 'Calculator';
+
+  operando1:number; 
+  operando2:number; 
+  resultado:number; 
+
+  sumar():void {
+    this.resultado = this.operando1 + this.operando2;
+  }
+
+  restar():void {
+    this.resultado = this.operando1 - this.operando2;
+  }
+
+  multiplicar():void {
+    this.resultado = this.operando1 * this.operando2;
+  }
+
+  dividir():void {
+    this.resultado = this.operando1 / this.operando2;
+  }
 }
