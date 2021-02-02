@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DividerComponent } from './divider/divider.component';
 import { PeopleComponent } from './people/people.component';
+import { CandidatesComponent } from './candidates/candidates.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
     DividerComponent,
-    PeopleComponent
+    PeopleComponent,
+    CandidatesComponent
   ],
   imports: [
     BrowserModule,

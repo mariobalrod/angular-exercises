@@ -1,0 +1,24 @@
+<h4 class="mt-5" style="text-align: center;">Candidatos</h4>
+
+<div class="candidates mt-5">
+    <div id="section1">
+        <h4>Candidatos</h4>
+        <p class="cursor_candidate" *ngFor="let item of candidatos; index as i;" (click)="change(item)">{{i+1}}. {{item.name}}</p>
+    </div>
+    <div id="section2">
+        <h4>Datos</h4>
+        <div *ngIf="currentCandidate">
+            <p>Nombre: {{ currentCandidate.name }}</p>
+            <p>Edad: {{ currentCandidate.age }}</p>
+            <p>Peso: {{ currentCandidate.mass }}</p>
+        </div>
+    </div>
+    <div id="section3">
+        <h4>Foto</h4>
+        <img *ngIf="currentCandidate" src={{currentCandidate.foto}} alt="">
+    </div>
+</div>
+
+<div style="display: flex; justify-content: center; align-items: center;">
+    <button type="button" class="btn btn-primary mt-4" (click)="clear()">Limpiar</button>
+</div>

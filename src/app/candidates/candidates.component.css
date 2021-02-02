@@ -1,0 +1,21 @@
+.candidates {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.cursor_candidate {
+    cursor: pointer;
+}
+
+#section1 {
+    color: purple;
+}
+
+#section2 {
+    color: brown;
+}
+
+#section3 {
+    color: gray;
+}
