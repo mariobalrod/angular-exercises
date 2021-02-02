@@ -5,12 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DividerComponent } from './divider/divider.component';
+import { PeopleComponent } from './people/people.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
-    DividerComponent
+    DividerComponent,
+    PeopleComponent
   ],
   imports: [
     BrowserModule,
