@@ -5,3 +5,9 @@
 <app-divider></app-divider>
 <app-candidates></app-candidates>
 <app-divider></app-divider>
+
+<h4 class="mt-5" style="text-align: center;">Listado de Personas 2</h4>
+<app-formulario (PasarPersona)="addPersona($event)"></app-formulario>
+<app-persona *ngFor="let item of personas; index as i;" [item]="item" [i]="i"></app-persona>
+
+<app-divider></app-divider>

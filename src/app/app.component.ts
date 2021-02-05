@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular';
+
+  personas: string[] = [];
+
+  addPersona(event): void {
+    this.personas.push(event)
+  }
 }
